@@ -110,7 +110,6 @@ public class KeywordRanking {
 
         conf.setMapperClass(Map.class);
         conf.setReducerClass(Reduce.class);
-//        conf.setCombinerClass(KeywordRanking.Reduce.class);
         conf.setInputFormat(TextInputFormat.class);
         conf.setOutputFormat(TextOutputFormat.class);
         FileInputFormat.setInputPaths(conf, new Path(args[0]));
